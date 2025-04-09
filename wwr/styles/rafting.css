@@ -2,7 +2,7 @@
 :root {
   --primary-color: #548c2f; 
   --secondary-color: #042837;
-  --font-color: #fffc31;
+  --font-color: #95ff3196;
   --background-color: #f2651954;
   --hero-opacity: 0.9;
 }
@@ -32,25 +32,106 @@ p {
 .sociallinks a {
   text-decoration: none;
 }
-  /*display: inline-block;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25px;
-  height: 25px;
-  margin-top: 10px;
+
+/*.grid-container {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 100 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-color);
+
 }
+
+.grid-container img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}*/
+/* header styling with css grid */
+header {
+  display: flex;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* styling the logo */
+header img {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* styling the title */
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+/* navigation bar styles with css flex*/
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  display: flex;
+}
+
+header nav ul li {
+  font-size: 18px;
   
 }
 
-/* Navigation Styles */
-  nav {
-  background-color: var(--primary-color);
+/* styling the links in the navigation bar */
+header nav ul li a {
+  text-decoration: none;
   color: var(--font-color);
-  text-align: center;
-  padding: 10px;
-  
+  font-weight: bold;
+  padding: 15px 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+/* styling the links in the navigation bar on hover */
+header nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: #0056b3;
+}
+
+
+
+/* Navigation Styles */
+  .navlist li {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    margin-bottom: 0px;;
+  }
+  
+  .navlist a {
+    float: right;
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 5px 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }   
+
+  .navlist a:hover {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+  }
+
+
+
 
 /* Hero Container Styles */
 .hero img {
@@ -62,7 +143,8 @@ p {
 }
 
 h1 {
-  position: absolute;
+  position: relative;
+  color: rgba(0, 255, 200, 0.479)
 }
 
 /* artictle styles */
@@ -79,4 +161,135 @@ h1 {
       float: right;
       
   }
+/* styles for the footer */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+.sociallinks {
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.sociallinks a img {
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.sociallinks a img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/*--------------------------------------------------------------*/
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border-bottom: 22px solid;
+}
+
+header img {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
   
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li {
+  font-size: 18px;
+}
+ 
+/* styling the links in the navigation bar */
+header nav ul li a {
+  text-decoration: none;
+  color:#333;
+  font-weight: bold;
+  padding: 5px 10px;
+
+}
+
+/*-------------------------------------------------------------------*/
+/* history section styles */
+.history {
+  display: grid;
+  
+  /*grid-template-columns: 1fr auto 1fr;*/
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+/* styling for text blocks */
+.history .text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.history img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Softens the edges for a sleek look */
+  border: 2px solid #ccc
+}
+
+/*--------------------------------------------------------------*/
+/* adventure section styles */
+.adventure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+/* styling for each figure */
+
+.adventure figure {
+  text-align: center;
+  max-width: 150px
+}
+
+/* styling for images */
+.adventure figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Softens the edges for a sleek look */
+  border: 2px solid #ccc
+}
+
+/* styling for captions */
+.adventure figcaption {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+

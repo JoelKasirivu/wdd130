@@ -12,16 +12,18 @@
     <meta name="author" content="Joel Kasirivu">
 </head>
 <body>
-    <header>
+    <header class = "grid-container">
+        <img src="./images/logo.jpg" alt="company logo">
+        <!--navigation bar-->
         <nav>
-            <img src="./images/logo.jpg" alt="company logo">
-            <!--navigation bar-->
-            <a href="idex.html">idex</a>
-            <a href="about.html">about</a>
-            <a href="trips.html">trips</a>
-            <a href="contact.html">contact</a>
+            <ul class = "navlist">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-
+   
     </header>
     <main>
         <!-- Hero div -->
@@ -35,22 +37,42 @@
             </article>
         </div>
         <!-- history section-->
-        <section>
+        <section class = "history">
             <h2>History.</h2>
             <p>The white-water rafting company was founded with a passion for adventure and a deep appreciation for the untamed beauty of rivers. Beginning as a small group of thrill-seekers eager to share their love for rafting, the company quickly grew into a respected provider of guided river expeditions. Over the years, it has expanded its operations, refining safety protocols, training expert guides, and introducing new routes that offer both adrenaline-pumping rapids and breathtaking scenic views. Through a commitment to excellence, environmental stewardship, and customer satisfaction, the company has built a legacy of unforgettable experiences—where every trip down the river is more than just a ride; it's an adventure in courage, teamwork, and pure exhilaration.</p>
         </section>
         <!-- Adventure Awaits Section -->
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <img src="./images/adventure.jpg" alt="Rafting Adventure 1">
-            <img src="./images/extreme.jpg" alt="Rafting Adventure 2">
-            <img src="./images/challenge.jpg" alt="Rafting Adventure 3">
-            <img src="./images/aganstallodds.jpg" alt="Rafting Adventure 4">
-            <img src="./images/downhill.jpg" alt="Rafting Adventure 5">
+        <section class = "adventure">
+            <figure>
+                <h2>Adventure Awaits You!</h2>
+                <img src="./images/adventure.jpg" alt="Rafting Adventure 1">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+
+            <figure> 
+                <img src="./images/extreme.jpg" alt="Rafting Adventure 2">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="./images/aganstallodds.jpg" alt="Rafting Adventure 3">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/challenge.jpg" alt="Rafting Adventure 4">
+                <figcaption>Rapid Runner</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/winner.jpg" alt="Rafting Adventure 3">
+                <figcaption>Rapid Runner</figcaption>
+            </figure>
+            
         </section>
         
     </main>
-    <footer>
+    <footer class = "footer">
         <!-- Copyright Info -->
         <p>&copy; 2025 White Water Rafting Company. Created by Joel Kasirivu.</p>
         <nav class = "sociallinks">
