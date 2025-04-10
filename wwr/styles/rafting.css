@@ -134,30 +134,43 @@ header nav ul li a:hover {
 
 
 /* Hero Container Styles */
-.hero img {
+.hero div {
   position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
+  
 
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  opacity: var(--hero-opacity); /* Adjust opacity for the hero image */
+  filter: blur(2px); /* Optional: Add a slight blur effect */
+}
+
 h1 {
-  position: relative;
+  position: absolute;
+  top: 200px;
   color: rgba(0, 255, 200, 0.479)
 }
 
 /* artictle styles */
 
   article {
-      position: relative;
+      position: absolute;
+      top: 400px;
       background-color: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
-      color: white; /* Ensures text is readable */
+      
       padding: 20px; /* Adds spacing for better layout */
       border-radius: 10px; /* Softens the edges for a sleek look */
   }
+
+  article p{
+    color: white; /* Ensures text is readable */
+
+  }
   
-  article img {
+  .hero article img {
+      width: 200px; /* Adjust size as needed */
       float: right;
       
   }
@@ -237,9 +250,8 @@ header nav ul li a {
 /* history section styles */
 .history {
   display: grid;
-  
-  /*grid-template-columns: 1fr auto 1fr;*/
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px;
   padding: 20px;
   background-color: var(--background-color);
 }
@@ -247,7 +259,7 @@ header nav ul li a {
 /* styling for text blocks */
 .history .text {
   font-size: 18px;
-  line-height: 1.6;
+  /*line-height: 1.6;*/
   color: #333;
 }
 
@@ -256,6 +268,15 @@ header nav ul li a {
   height: auto;
   border-radius: 10px; /* Softens the edges for a sleek look */
   border: 2px solid #ccc
+}
+
+.history h2 {
+  position:absolute;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  margin-top: auto;
+  
 }
 
 /*--------------------------------------------------------------*/
