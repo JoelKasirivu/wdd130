@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us White Water Rafting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Experience the thrill of rafting with us here at white water rafting, breathtaking rapids,expert-guided adventures, and unforgettaable memories. book your adventure today!">
+    <meta name="author" content="Joel Kasirivu">
+</head>
+<body>
+    <header class = "grid-container">
+        <img src="./images/logo.jpg" alt="company logo">
+        <!--navigation bar-->
+        <nav>
+            <ul class = "navlist">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+   
+    </header>
+    <main>
+        <p>Address: White water rafting 123 main street, Nile Resort, Jinja Uganda.</p>
+        <p>Phone number: 123-456-789</p>
+        <p>Email: <a href="whitewater@gmail.com">whitewater@gmail.com</a></p>
+
+        <div class = "map">
+            <h2>Find us on the map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.3356615280777!2d33.175811673670914!3d0.4583105995372007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177bc9117e528603%3A0xa3349e4d48fb1f09!2sJinja%20Nile%20Resort%20Uganda!5e1!3m2!1sen!2sug!4v1744290465203!5m2!1sen!2sug" width="600" height="450";" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div class = "team-section">
+            <h2>Meet Our Team</h2>
+            <div class = "team-member">
+                <img src="./images/client2.jpg" alt="Team Member 1">
+                <p class="caption">John bahku</p>
+                <p class="title">Senior Rafting Guide</p>
+            </div>
+            <div class = "employee">
+                <img src="./images/client1.jpg" alt="Team Member 2">
+                <p class="caption">Sarah Brown</p>
+                <p class="title">Customer Relations Manager</p>
+            </div>
+            <div class = "employee">
+                <img src="./images/client3.jpg" alt="Team Member 3">
+                <p class="caption">Emmanuel Davis</p>
+                <p class="title">Safety Specialist</p>
+            </div>
+
+        </div>
+        <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+
+            <!-- User Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- User Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Purpose of Message -->
+            <label>Purpose of Message:</label>
+            <div class="radio-group">
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label>
+
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+            </div>
+
+            <!-- Message -->
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+            <!-- Newsletter Subscription -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">submit</button>
+
+        </form>
+    </div>
+    </main>
+    <footer class = "footer">
+        <!-- Copyright Info -->
+        <p>&copy; 2025 White Water Rafting Company. Created by Joel Kasirivu.</p>
+            <nav class = "sociallinks">
+            <!-- Social Media Links -->
+            <a href="https://facebook.com">
+                <img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com">
+                <img src="./images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com">
+                <img src="./images/instagram.png" alt="Instagram"></a>
+            <p><a href="https://app.moqups.com/ZvKryKMIJUGcOxS5MWppJa6lwRZu9y8R/view/page/ad64222d5" target="_blank"></a></p>
+    </footer>
+</body>
+</html>
