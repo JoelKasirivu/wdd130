@@ -149,6 +149,7 @@ header nav ul li a:hover {
 
 h1 {
   position: absolute;
+
   top: 200px;
   color: rgba(0, 255, 200, 0.479)
 }
@@ -168,10 +169,17 @@ h1 {
     color: white; /* Ensures text is readable */
 
   }
+
+  article img {
+      width: 100px; /* Adjust size as needed */
+      float: right; /* Aligns the image to the right */
+      margin-left: 20px; /* Adds space between text and image */
+  }
   
   .hero article img {
-      width: 200px; /* Adjust size as needed */
-      float: right;
+      width: 100px; /* Adjust size as needed */
+      float: right; /* Aligns the image to the right */
+
       
   }
 /* styles for the footer */
@@ -275,7 +283,7 @@ header nav ul li a {
   left: 0px;
   right: 0px;
   text-align: center;
-  margin-top: auto;
+  margin-top: 0px;
   
 }
 
@@ -317,13 +325,6 @@ header nav ul li a {
 /*--------------------------------------------------------------*/
 
 /*CSS (styles.css):*/
-body {
-    font-family: Arial, sans-serif;
-    /*background-color: #f4f4f4;*/
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
 
 .form-container {
     max-width: 500px;
@@ -370,3 +371,229 @@ button {
 button:hover {
   background-color: #005a9e;
 }
+
+/*styles for the index.html page*/
+.hero p {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+  color: white;
+  background-color: #ccccccad;
+  font-size: 18px;
+  line-height: 1.6;
+}
+/*Added style to the h2 tag in the hero section*/
+.hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/*styles for the signup on the idex.htmlpage*/
+.newsletter-container {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/*styling the call to action*/
+.cta-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #007acc;
+  color: white;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #005f8c;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #003f5c;
+}
+/*--------------------------------------------------------------*/
+
+/* stylying for the grid-container*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+/*...................................................................*/
+/* styling for the layout page*/
+.cta-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #007acc;
+  color: white;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #005f8c;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #003f5c;
+}
+
+/*--------------------------------------------------------------*/
+/* styles for the trips page*/
+.trips-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trip-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.trip-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.trip-item h2 {
+  margin-top: 10px;
+  color: #007acc;
+}
+
+.trip-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/*--------------------------------------------------------------*/
+/* styles for the trips table*/
+.trips-table-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.trips-table th, .trips-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.trips-table th {
+  background-color: #007acc;
+  color: white;
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.trips-table tr:hover {
+  background-color: black;
+}
+
+/*--------------------------------------------------------------*/
+/*styling the book now button*/
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .book-now-button {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: #33ffe471;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .book-now-button:hover {
+    background-color: #ff2e00;
+  }
+   
+
